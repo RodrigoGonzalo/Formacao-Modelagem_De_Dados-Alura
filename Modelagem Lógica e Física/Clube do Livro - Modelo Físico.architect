@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>Clube do Livro - Modelo Físico</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="03c9dddb-df96-4e86-9223-485bc086abcc" name="PEDIDO" objectType="TABLE" physicalName="PEDIDO" >
+   <remarks>Tabela em que ficará armazenado todos os pedidos feitos pelos clientes no Clube do Livro.</remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="6c574a84-70a2-45b8-9ee0-bcfba338a73b" autoIncrement="false" autoIncrementSequenceName="PEDIDO_id_pedido_seq" defaultValue="" name="id_pedido" nullable="0" physicalName="id_pedido" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos pedidos dos clientes no Clube do Livro, ela é a chave primária dessa Tabela.</remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="662de74b-1e96-4e41-bf72-442b144d2f88" autoIncrement="false" autoIncrementSequenceName="CLIENTE_id_cliente_seq" defaultValue="" name="id_cliente" nullable="0" physicalName="id_cliente" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos clientes cadastrados no Clube do Livro.</remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="1552b5b9-8f48-49d1-9675-1e49fdb2bce4" autoIncrement="false" autoIncrementSequenceName="PEDIDO_data_seq" defaultValue="" name="data" nullable="0" physicalName="data" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks>Coluna que vai armazenar a data dos pedidos feitos pelos clientes no Clube do Livro.</remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="67d667fd-e57b-4e77-80b4-d11be19b30f6" autoIncrement="false" autoIncrementSequenceName="PEDIDO_valor_pedido_seq" defaultValue="" name="valor_pedido" nullable="0" physicalName="valor_pedido" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>Coluna que vai armazenar o valor total do pedido feito pelo cliente no Clube do Livro.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX6" populated="true" UUID="e2495696-149c-431b-9019-d01440a2944f" clustered="false" name="TB_PEDIDO_PK" physicalName="TB_PEDIDO_PK" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC7" populated="true" UUID="015c06b9-d16c-4935-8ec8-4ff534cc3b2a" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="id_pedido" physicalName="id_pedido" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB8" populated="true" UUID="32d254dd-6213-470f-9847-9dc80ef6a886" name="CLIENTE" objectType="TABLE" physicalName="CLIENTE" >
+   <remarks>Tabela em que vai estar armazenado os dados dos clientes no Clube do Livro.</remarks>
+   <folder id="FOLTAB81" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL9" populated="true" UUID="a02aed39-4886-44c6-97e2-49a725780e82" autoIncrement="false" autoIncrementSequenceName="CLIENTE_id_cliente_seq" defaultValue="" name="id_cliente" nullable="0" physicalName="id_cliente" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos clientes cadastrados no Clube do Livro.</remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="ed11d893-146d-414a-b29c-7fd5128f6191" autoIncrement="false" autoIncrementSequenceName="CLIENTE_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Atributo que vai armazenar o nome dos clientes cadastrados no Clube do Livro.</remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="b72ec645-0160-4030-a1e8-9a65535d0f11" autoIncrement="false" autoIncrementSequenceName="CLIENTE_telefone_1_seq" defaultValue="" name="telefone_1" nullable="0" physicalName="telefone_1" precision="14" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar um telefone do cliente cadastrado no Clube do Livro, sendo essa coluna obrigatória.</remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="6bc480b9-03a0-49f5-b265-b8fa76ee993c" autoIncrement="false" autoIncrementSequenceName="CLIENTE_telefone_2_seq" defaultValue="" name="telefone_2" nullable="1" physicalName="telefone_2" precision="14" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar um telefone do cliente cadastrado no Clube do Livro, sendo essa coluna opcional para o cliente.</remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="99f8b241-11f1-4def-9c0a-c988de360372" autoIncrement="false" autoIncrementSequenceName="CLIENTE_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o email do cliente cadastrado no Clube do Livro.</remarks>
+    </column>
+    <column id="COL14" populated="true" UUID="723cd001-28dd-43d1-b6ed-dd8642982f83" autoIncrement="false" autoIncrementSequenceName="CLIENTE_rua_seq" defaultValue="" name="rua" nullable="0" physicalName="rua" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar a rua do cliente cadastrado no Clube do Livro.</remarks>
+    </column>
+    <column id="COL15" populated="true" UUID="2ad79645-e237-46d9-91e6-a019648b31ea" autoIncrement="false" autoIncrementSequenceName="CLIENTE_bairro_seq" defaultValue="" name="bairro" nullable="0" physicalName="bairro" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o bairro do cliente cadastrado no Clube do Livro.</remarks>
+    </column>
+    <column id="COL16" populated="true" UUID="880303c4-dde5-4b1d-a1ab-029bd353aaef" autoIncrement="false" autoIncrementSequenceName="CLIENTE_cep_seq" defaultValue="" name="cep" nullable="0" physicalName="cep" precision="9" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o CEP do cliente cadastrado no Clube do Livro.</remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="13c517cd-7810-4ddc-ac4f-06b9f23670d3" autoIncrement="false" autoIncrementSequenceName="CLIENTE_estado_seq" defaultValue="" name="estado" nullable="0" physicalName="estado" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o estado do cliente cadastrado no Clube do Livro.</remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="727e9e29-9608-4f25-ad65-32f93e1bff40" autoIncrement="false" autoIncrementSequenceName="CLIENTE_cidade_seq" defaultValue="" name="cidade" nullable="0" physicalName="cidade" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar a cidade do cliente cadastrado no Clube do Livro.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB83" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB82" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB84" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX19" populated="true" UUID="42d23470-bab6-4682-9bc5-0c86d5f3c870" clustered="false" name="TB_CLIENTE_PK" physicalName="TB_CLIENTE_PK" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC20" populated="true" UUID="92726dd2-be18-4084-b9ed-9be8c9f4b341" ascendingOrDescending="UNSPECIFIED" column-ref="COL9" name="id_cliente" physicalName="id_cliente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB21" populated="true" UUID="66a4f805-b767-4ff8-b5d4-7ab589349685" name="PESSOA_FISICA" objectType="TABLE" physicalName="PESSOA_FISICA" >
+   <remarks>Tabela que irá armazenar os dados das pessoas físicas cadastradas no Clube do Livro.</remarks>
+   <folder id="FOLTAB211" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL22" populated="true" UUID="1ab32913-89bb-4da6-8fbb-417b7bdaa689" autoIncrement="false" autoIncrementSequenceName="CLIENTE_id_cliente_seq" defaultValue="" name="id_cliente" nullable="0" physicalName="id_cliente" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos clientes cadastrados no Clube do Livro.</remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="091250a3-09e2-4631-b60d-53a15b66b9f0" autoIncrement="false" autoIncrementSequenceName="PESSOA_FISICA_cpf_seq" defaultValue="" name="cpf" nullable="0" physicalName="cpf" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o CPF do cliente cadastrado no Clube do Livro, isso se ele(a) for pessoa fisica.</remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="d3b469d4-c58d-4a9d-afda-499410df1de5" autoIncrement="false" autoIncrementSequenceName="PESSOA_FISICA_rg_seq" defaultValue="" name="rg" nullable="0" physicalName="rg" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o rg do cliente cadastrado no Clube do Livro, isso se ele(a) for pessoa fisica.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB213" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB212" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB214" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX25" populated="true" UUID="e8783f9e-e712-459e-b7ca-cc25ba1b70a0" clustered="false" name="TB_PESSOA_FISICA_PK" physicalName="TB_PESSOA_FISICA_PK" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC26" populated="true" UUID="dbed21c7-72ce-40e5-8513-25eabd0735b7" ascendingOrDescending="UNSPECIFIED" column-ref="COL22" name="id_cliente" physicalName="id_cliente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB27" populated="true" UUID="c4b57279-a8fb-4e1a-910d-aa8ac18a1c85" name="PESSOA_JURIDICA" objectType="TABLE" physicalName="PESSOA_JURIDICA" >
+   <remarks>Tabela que irá armazenar os dados das pessoas jurídicas cadastradas no Clube do Livro.</remarks>
+   <folder id="FOLTAB271" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL28" populated="true" UUID="07c61cd7-0f39-44d4-9e2f-4f2deb10d1e6" autoIncrement="false" autoIncrementSequenceName="CLIENTE_id_cliente_seq" defaultValue="" name="id_cliente" nullable="0" physicalName="id_cliente" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos clientes cadastrados no Clube do Livro.</remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="f511dd6b-d203-41a6-bf3e-82ea78d2ec11" autoIncrement="false" autoIncrementSequenceName="PESSOA_JURIDICA_cnpj_seq" defaultValue="" name="cnpj" nullable="0" physicalName="cnpj" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o cnpj do cliente cadastrado no Clube do Livro. Isso se ele(a) for pessoa jurídica.</remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="a8252cba-d135-4fb9-ae92-6a4beed68249" autoIncrement="false" autoIncrementSequenceName="PESSOA_JURIDICA_ie_seq" defaultValue="" name="ie" nullable="0" physicalName="ie" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar o ie(inscrição estadual) do cliente cadastrado no Clube do Livro, isso se ele(a) for pessoa jurídica.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB273" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB272" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB274" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX31" populated="true" UUID="a4dcf461-6dc0-4ddc-88b0-a5f9aed1b015" clustered="false" name="TB_PESSOA_JURIDICA_PK" physicalName="TB_PESSOA_JURIDICA_PK" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC32" populated="true" UUID="ee3745b8-0051-4c50-bd9b-f0665b321135" ascendingOrDescending="UNSPECIFIED" column-ref="COL28" name="id_cliente" physicalName="id_cliente" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB33" populated="true" UUID="9abb46c2-6112-44e4-9e48-c0beb41f0042" name="EDITORA" objectType="TABLE" physicalName="EDITORA" >
+   <remarks>Tabela que irá armazenar os dados das editoras cadastradas no Clube do Livro.
+</remarks>
+   <folder id="FOLTAB331" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL34" populated="true" UUID="f3b62c03-5cd7-45bf-9cab-80b8669f27fb" autoIncrement="false" autoIncrementSequenceName="EDITORA_id_editora_seq" defaultValue="" name="id_editora" nullable="0" physicalName="id_editora" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s das editoras cadastradas no clube do livro.</remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="379a4d2a-2522-4207-b930-3f7dfbfc11af" autoIncrement="false" autoIncrementSequenceName="EDITORA_telefone_1_seq" defaultValue="" name="telefone_1" nullable="0" physicalName="telefone_1" precision="14" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar um telefone da editora cadastrada no Clube do Livro, sendo essa coluna obrigatória.</remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="7bee0160-8d4a-4e83-a144-24623e28687b" autoIncrement="false" autoIncrementSequenceName="EDITORA_telefone_2_seq" defaultValue="" name="telefone_2" nullable="1" physicalName="telefone_2" precision="14" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar um telefone da editora cadastrada no Clube do Livro, sendo essa coluna opcional.</remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="d8ab4f8b-98f4-4f30-9d2c-1a58f7550a58" autoIncrement="false" autoIncrementSequenceName="EDITORA_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o email da editora cadastrada no Clube do Livro.</remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="d18a42a5-e2ae-45a6-b310-f86c57638122" autoIncrement="false" autoIncrementSequenceName="EDITORA_nome_contato_seq" defaultValue="" name="nome_contato" nullable="0" physicalName="nome_contato" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o nome de contato da editora cadastrada no Clube do Livro.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB333" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB332" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB334" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX39" populated="true" UUID="74ed7b17-08eb-4a87-b04b-6d12c4604f65" clustered="false" name="TB_EDITORA_PK" physicalName="TB_EDITORA_PK" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC40" populated="true" UUID="5f3d28d8-9851-47d8-bfdf-19bbc382d2f1" ascendingOrDescending="UNSPECIFIED" column-ref="COL34" name="id_editora" physicalName="id_editora" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB41" populated="true" UUID="96d1af32-db45-4ca4-9baa-ab50528852d4" name="LIVRO" objectType="TABLE" physicalName="LIVRO" >
+   <remarks>Tabela que irá armazenar os dados dos livros cadastradas no Clube do Livro.
+</remarks>
+   <folder id="FOLTAB411" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL42" populated="true" UUID="f8047e41-2447-4da2-a01c-afbceb265830" autoIncrement="false" autoIncrementSequenceName="LIVRO_id_livro_seq" defaultValue="" name="id_livro" nullable="0" physicalName="id_livro" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos livros cadastrados no clube do livro.</remarks>
+    </column>
+    <column id="COL43" populated="true" UUID="bfef9dfc-b6fb-4b91-a2ef-18ed5dee12eb" autoIncrement="false" autoIncrementSequenceName="EDITORA_id_editora_seq" defaultValue="" name="id_editora" nullable="0" physicalName="id_editora" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s das editoras cadastradas no clube do livro.</remarks>
+    </column>
+    <column id="COL44" populated="true" UUID="c147cdac-8d9d-4705-bc21-0ce4d61c9a8e" autoIncrement="false" autoIncrementSequenceName="LIVRO_titulo_seq" defaultValue="" name="titulo" nullable="0" physicalName="titulo" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o título/nome dos livros cadastrados no Clube do Livro.</remarks>
+    </column>
+    <column id="COL45" populated="true" UUID="279335cd-9497-424f-af7a-f28260cf68da" autoIncrement="false" autoIncrementSequenceName="LIVRO_autor_seq" defaultValue="" name="autor" nullable="0" physicalName="autor" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar o nome dos autores dos livros cadastrados no Clube do Livro.</remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="c10f2603-adb4-449b-9d5e-77292851d318" autoIncrement="false" autoIncrementSequenceName="LIVRO_categoria_seq" defaultValue="" name="categoria" nullable="0" physicalName="categoria" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que irá armazenar a categoria dos livros cadastrados no Clube do Livro. Que gênero são esses livros ?</remarks>
+    </column>
+    <column id="COL47" populated="true" UUID="6e3b0a2f-c742-49ce-be6c-9df7a85bdf9f" autoIncrement="false" autoIncrementSequenceName="LIVRO_ano_publicacao_seq" defaultValue="" name="ano_publicacao" nullable="0" physicalName="ano_publicacao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks>Coluna que irá armazenar o ano em que os livros cadastrados no Clube do Livro foram lançados.</remarks>
+    </column>
+    <column id="COL48" populated="true" UUID="3b8bd39f-9535-4d27-aa89-9ec2ac52cbab" autoIncrement="false" autoIncrementSequenceName="LIVRO_valor_seq" defaultValue="" name="valor" nullable="0" physicalName="valor" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>Coluna que irá armazenar os valores/preços dos livros cadastrados no Clube do Livro.</remarks>
+    </column>
+    <column id="COL49" populated="true" UUID="266220ce-5569-4b60-8fdc-08ce01ea3a37" autoIncrement="false" autoIncrementSequenceName="LIVRO_isbn_seq" defaultValue="" name="isbn" nullable="0" physicalName="isbn" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Coluna que irá armazenar o ISBN(International Standard Book Number) dos livros cadastrados no Clube do Livro.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB413" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB412" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB414" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX50" populated="true" UUID="9bf9e5e7-e8f9-4684-90d1-f37323423f08" clustered="false" name="TB_LIVRO_PK" physicalName="TB_LIVRO_PK" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC51" populated="true" UUID="28cdc59a-4340-4e0c-be88-59ddd984df6b" ascendingOrDescending="UNSPECIFIED" column-ref="COL42" name="id_livro" physicalName="id_livro" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB52" populated="true" UUID="3e8e490b-7811-4c7e-aef7-dfe2f2e09523" name="ESTOQUE" objectType="TABLE" physicalName="ESTOQUE" >
+   <remarks>Tabela que irá armazenar o estoque dos livros cadastradas no Clube do Livro.
+</remarks>
+   <folder id="FOLTAB521" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL53" populated="true" UUID="fc74e9d8-a19a-43b4-ace3-dae149d89946" autoIncrement="false" autoIncrementSequenceName="LIVRO_id_livro_seq" defaultValue="" name="id_livro" nullable="0" physicalName="id_livro" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos livros cadastrados no clube do livro.</remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="e2dfd8aa-829f-413e-926f-11e131a27525" autoIncrement="false" autoIncrementSequenceName="ESTOQUE_qtde_estoque_seq" defaultValue="" name="qtde_estoque" nullable="0" physicalName="qtde_estoque" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Coluna que irá armazenar os livros cadastrados em estoque no Clube do Livro.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB523" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB522" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB524" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX55" populated="true" UUID="5c76492a-2ed7-400d-b3c3-b508e7b567d8" clustered="false" name="TB_ESTOQUE" physicalName="TB_ESTOQUE" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC56" populated="true" UUID="2dba7419-1c62-43a3-ab97-195bb73b3db4" ascendingOrDescending="UNSPECIFIED" column-ref="COL53" name="id_livro" physicalName="id_livro" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB57" populated="true" UUID="8cca959b-cd03-4c9f-a2f4-4857905971df" name="ITEM_PEDIDO" objectType="TABLE" physicalName="ITEM_PEDIDO" >
+   <remarks>Tabela que vai armazenar os pedidos e os itens que fazem parte desses pedidos.
+</remarks>
+   <folder id="FOLTAB571" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL58" populated="true" UUID="9b588a8b-b317-406e-a9f1-05fd12a3b026" autoIncrement="false" autoIncrementSequenceName="LIVRO_id_livro_seq" defaultValue="" name="id_livro" nullable="0" physicalName="id_livro" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos livros cadastrados no clube do livro.</remarks>
+    </column>
+    <column id="COL59" populated="true" UUID="141495bc-d116-4e04-bf46-90f6033c88f3" autoIncrement="false" autoIncrementSequenceName="PEDIDO_id_pedido_seq" defaultValue="" name="id_pedido" nullable="0" physicalName="id_pedido" precision="10" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Coluna que vai armazenar os id´s dos pedidos dos clientes no Clube do Livro, ela é a chave primária dessa Tabela.</remarks>
+    </column>
+    <column id="COL60" populated="true" UUID="aa5cc322-4988-4959-9c02-ea7f8c685e49" autoIncrement="false" autoIncrementSequenceName="ITEM_PEDIDO_qtde_pedido_seq" defaultValue="" name="qtde_pedido" nullable="0" physicalName="qtde_pedido" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Coluna que irá mostrar a quantidade do pedido no Clube do Livro.</remarks>
+    </column>
+    <column id="COL61" populated="true" UUID="7f96fdc7-9aba-4c10-bcb6-86af9e151edd" autoIncrement="false" autoIncrementSequenceName="ITEM_PEDIDO_valor_item_seq" defaultValue="" name="valor_item" nullable="0" physicalName="valor_item" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>Coluna que vai armazenar o valor dos itens no Clube do Livro.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB573" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB572" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB574" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX62" populated="true" UUID="953cca6c-01e6-40ef-8271-41490fbd224c" clustered="false" name="TB_ITEM_PEDIDO_PK" physicalName="TB_ITEM_PEDIDO_PK" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC63" populated="true" UUID="55dfe84d-cefd-4c88-a90a-258ee4b4e324" ascendingOrDescending="UNSPECIFIED" column-ref="COL58" name="id_livro" physicalName="id_livro" />
+     <index-column id="IDC64" populated="true" UUID="69c6bb67-b214-47a0-bba1-7368c231cd5c" ascendingOrDescending="UNSPECIFIED" column-ref="COL59" name="id_pedido" physicalName="id_pedido" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL65" populated="true" UUID="51cac771-19ce-4d50-8f78-8bd7c94f0409" deferrability="7" deleteRule="3" fk-table-ref="TAB57" fkCardinality="6" identifying="true" name="PEDIDO_ITEM_PEDIDO_fk" physicalName="PEDIDO_ITEM_PEDIDO_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP66" populated="true" UUID="71a891b3-d8fa-4ce3-931d-0edf27f4ff7f" fk-column-ref="COL59" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL67" populated="true" UUID="ac0b3c2b-41c8-41b2-aedb-7b2b93bd0d9f" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="CLIENTE_PEDIDO_fk" physicalName="CLIENTE_PEDIDO_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP68" populated="true" UUID="9902e6a5-2ce3-4336-8d4f-129ed586faa5" fk-column-ref="COL3" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL9" />
+   </relationship>
+   <relationship id="REL69" populated="true" UUID="a40bcfa5-e2e8-4bbc-a570-348757af1c5e" deferrability="7" deleteRule="3" fk-table-ref="TAB27" fkCardinality="3" identifying="true" name="CLIENTE_PESSOA_JURIDICA_fk" physicalName="CLIENTE_PESSOA_JURIDICA_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP70" populated="true" UUID="a4dc3388-c25e-434c-9af5-c7251e160373" fk-column-ref="COL28" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL9" />
+   </relationship>
+   <relationship id="REL71" populated="true" UUID="c96a3d3c-c796-42d1-b946-7bf9c1ba1df2" deferrability="7" deleteRule="3" fk-table-ref="TAB21" fkCardinality="3" identifying="true" name="CLIENTE_PESSOA_FISICA_fk" physicalName="CLIENTE_PESSOA_FISICA_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP72" populated="true" UUID="150b7d04-cd54-4253-b35e-0facc1083378" fk-column-ref="COL22" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL9" />
+   </relationship>
+   <relationship id="REL73" populated="true" UUID="c2872e8c-07bb-4adc-a037-f1d7ff267f30" deferrability="7" deleteRule="3" fk-table-ref="TAB41" fkCardinality="6" identifying="false" name="EDITORA_LIVRO_fk" physicalName="EDITORA_LIVRO_fk" pk-table-ref="TAB33" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP74" populated="true" UUID="ee55e301-7c07-4139-8c03-2909bc411888" fk-column-ref="COL43" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL34" />
+   </relationship>
+   <relationship id="REL75" populated="true" UUID="42ea1c03-4909-4e30-bb82-f037c8c867ca" deferrability="7" deleteRule="3" fk-table-ref="TAB52" fkCardinality="3" identifying="true" name="LIVRO_ESTOQUE_fk" physicalName="LIVRO_ESTOQUE_fk" pk-table-ref="TAB41" pkCardinality="6" updateRule="3" >
+    <column-mapping id="CMP76" populated="true" UUID="2d45c65d-c771-4bb5-ab91-2a92a733e31a" fk-column-ref="COL53" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL42" />
+   </relationship>
+   <relationship id="REL77" populated="true" UUID="57df1146-850e-46b5-a087-7a358a8f5528" deferrability="7" deleteRule="3" fk-table-ref="TAB57" fkCardinality="6" identifying="true" name="LIVRO_ITEM_PEDIDO_fk" physicalName="LIVRO_ITEM_PEDIDO_fk" pk-table-ref="TAB41" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP78" populated="true" UUID="19888af9-facd-4739-9c6f-999f19e1b555" fk-column-ref="COL58" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL42" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="192" y="135" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB8" x="196" y="371" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB21" x="40" y="685" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB27" x="359" y="682" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB33" x="825" y="667" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB41" x="821" y="382" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB52" x="1259" y="418" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB57" x="839" y="137" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL67" pkConnection="0.4921875" fkConnection="0.5019455252918288" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL73" pkConnection="0.4942084942084942" fkConnection="0.5019305019305019" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL75" pkConnection="0.4716981132075472" fkConnection="0.5396825396825397" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL69" pkConnection="0.7421875" fkConnection="0.39923954372623577" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL71" pkConnection="0.27734375" fkConnection="0.5855513307984791" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL77" pkConnection="0.5135135135135135" fkConnection="0.492" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL65" pkConnection="0.49473684210526314" fkConnection="0.49473684210526314" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
