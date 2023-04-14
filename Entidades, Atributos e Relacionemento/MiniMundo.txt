@@ -1,0 +1,9 @@
+MiniMundo - Representa algo da realidade, recorte do mundo real
+
+- O banco de dados representa aspectos do mundo real, às vezes chamado de mini-mundo.
+
+Abstração:
+	- Um processo mental
+	- Permite escolher ou isolar um aspecto determinado de coisas complexas
+	- Finalidade de simplificar a minha avaliação
+	IMPORTANTE: Ignorar Detalhes

@@ -1,0 +1,8 @@
+MER - Modelo Entidade Relacionamento
+	- É um modelo conceitual do banco
+	- Usado para descrever objetos, suas características e como eles se relacionam
+
+DER - Diagrama Entidade Relacionamento
+	- Representação gráfica do DER
+	- É usado como sinônimo, muita gente mistura esses conceitos
+	- Facilita a comunicação de todos
